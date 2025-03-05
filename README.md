@@ -22,3 +22,17 @@ The installation is documented [`on the website`](http://bycon.progenetix.org/in
 
 Since version `1.0.55` (2023-06-22) additional "services" may be installed from
 the [`byconaut`](https://github.com/progenetix/byconaut/) repository.
+
+#### Docker
+
+Building docker image
+
+```bash
+docker build -t ${IMAGE_NAME}:${TAG} -f Dockerfile .
+```
+
+Running docker image
+
+```bash
+docker run -d -e BYCON_MONGO_HOST={MONGODB_CONNECTION_STRING} -p 80:80 ${IMAGE_NAME}:${TAG}
+```

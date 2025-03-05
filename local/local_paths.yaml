@@ -5,15 +5,15 @@ system_group: staff
 
 bycon_install_dir:
   - /
-  - Library
-  - WebServer
+  - var
+  - www
   - cgi-bin
   - bycon
 
 server_tmp_dir_loc:
   - /
-  - Library
-  - WebServer
+  - var
+  - www
   - Documents
   - tmp
 
@@ -23,8 +23,8 @@ server_tmp_dir_web: /tmp
 
 server_site_dir_loc:
   - /
-  - Library
-  - WebServer
+  - var
+  - www
   - Documents
   - Sites
   - beaconplus
@@ -34,8 +34,8 @@ server_site_dir_loc:
 
 server_callsets_dir_loc:
   - /
-  - Library
-  - WebServer
+  - var
+  - www
   - Documents
   - Sites
   - arraymap
