@@ -100,7 +100,7 @@ class ByconTSVreader():
     # -------------------------------------------------------------------------#
 
     def __dictread(self):
-        data = csv.DictReader(filter(lambda row: row.startswith('#') is False, csvfile), delimiter="\t", quotechar='"')
+        data = csv.DictReader(filter(lambda row: row.startswith('#') is False, self.tsv_data), delimiter="\t", quotechar='"')
         self.fieldnames = list(data.fieldnames)
         for l in data:
             self.dictlist.append(dict(l))
